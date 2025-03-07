@@ -1,9 +1,9 @@
+import { SignInButton, UserButton } from "@clerk/nextjs";
 import { currentUser } from "@clerk/nextjs/server";
 import { BellIcon, HomeIcon, UserIcon } from "lucide-react";
 import Link from "next/link";
 import { ModeToggle } from "./ModeToggle";
 import { Button } from "./ui/button";
-import { SignInButton, UserButton } from "@clerk/nextjs";
 
 const DesktopNavbar = async () => {
   const user = await currentUser();
@@ -41,8 +41,10 @@ const DesktopNavbar = async () => {
         </>
       ) : (
         <>
-          <SignInButton mode="modal" >
-            <Button variant="default" className="cursor-pointer" >Sign In</Button>
+          <SignInButton mode="modal">
+            <Button variant="default" className="cursor-pointer">
+              Sign In
+            </Button>
           </SignInButton>
         </>
       )}
