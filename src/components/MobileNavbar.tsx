@@ -48,7 +48,7 @@ const MobileNavbar = () => {
         </SheetTrigger>
         <SheetContent side="right" className="w-[300px]">
           <SheetHeader>
-            <SheetTitle className="hidden" >Menu</SheetTitle>
+            <SheetTitle className="hidden">Menu</SheetTitle>
           </SheetHeader>
           <nav className="flex flex-col space-y-4 mt-6">
             <Button
